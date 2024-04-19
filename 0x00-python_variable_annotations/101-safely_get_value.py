@@ -2,11 +2,11 @@
 """11. More involved type annotations"""
 from typing import TypeVar, Mapping, Any, Union
 
-U = TypeVar("U")
+T = TypeVar("T")
 
 
 def safely_get_value(
-    dct: Mapping, key: Any, default: Union[U, None] = None) -> Union[Any, U]:
+    dct: Mapping, key: Any, default: Union[T, None] = None) -> Union[Any, T]:
     """type annotations"""
     if key in dct:
         return dct[key]
