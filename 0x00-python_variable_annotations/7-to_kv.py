@@ -5,7 +5,7 @@ Module to demostrate Complex types annotations.
 from typing import Union, Tuple
 
 
-def to_kv(k: str, v: Union[int, float]) -> Tuple[int, float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
     """
     Typed-Annotated function that return a mixed-types tuple.
 
